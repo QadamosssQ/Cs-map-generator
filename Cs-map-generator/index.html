@@ -4,14 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Simple map generator to csgo" />
+    <meta name="description" content="Simple map chooser to csgo" />
     <meta name="author" content="QAdamossQ" />
     <meta name="robots" content="all" />
+    <link rel="shortcut icon" href="ikon.png">
     <link rel="stylesheet" href="style.css">
     <title>Cs-map-generator</title>
 </head>
-<body>
-    <h1>Welcome</h1>
+<body> 
+    <button id="bplay">Music Play</button>
+    <button id="bstop">Music Stop</button>
+<div class="toflex">
+
+    <h1>Welcome in CS-GO map chooser</h1>
+    <h2>Draw your map</h2>
     
+
+</div>
+
+<div class="losowanie">
+    <h3>How many maps do you have:</h3><br>
+    <label for="domTextElement"></label>
+    <input type="text" id="domTextElement" > 
+    
+    <button type="button"  onclick="getValueInput()" class="start">Start</button> 
+    
+    <p id="valueInput">Your map is:</p> 
+  
+
+</div>
+
+<script src="main.js"></script>
+
+
+
 </body>
 </html>
