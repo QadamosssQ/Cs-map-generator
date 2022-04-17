@@ -1,42 +1,127 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Simple map chooser to csgo" />
-    <meta name="author" content="QAdamossQ" />
-    <meta name="robots" content="all" />
-    <link rel="shortcut icon" href="ikon.png">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta name="description" content="Simple map chooser to csgo" />
+         <meta name="author" content="QAdamossQ" />
+         <meta name="robots" content="all" />
+         <link rel="shortcut icon" href="ikon.png">
+    <title>CSGO map chooser</title>
     <link rel="stylesheet" href="style.css">
-    <title>Cs-map-generator</title>
 </head>
-<body> 
-    <button id="bplay">Music Play</button>
-    <button id="bstop">Music Stop</button>
-<div class="toflex">
+<body>
 
-    <h1>Welcome in CS-GO map chooser</h1>
-    <h2>Draw your map</h2>
-    
+<h1>Csgo map chooser</h1>
+<h2>Choose your map</h2>
 
+<div class="maps">
+
+    <div class="switches">
+
+
+        <div class="mirage">
+
+            <label for="mirage">Mirage</label>
+
+            <input type="checkbox" id="mirage"  name="mirage">
+
+
+        </div>
+
+
+
+        <div class="inferno">
+            <label for="inferno">Inferno</label>
+            <input type="checkbox"  id="inferno" name="inferno" class="inferno">
+
+        </div>
+
+
+
+        <div class="dust2">
+            <label for="dust2">Dust2</label>
+            <input type="checkbox"  id="dust2"  name="dust" class="dust2">
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="switches2">
+
+        <div class="nuke">
+            <label for="nuke">Nuke</label>
+            <input type="checkbox"  id="nuke"  name="nuke" class="nuke">
+
+        </div>
+
+        <div class="ancient">
+            <label for="ancient">Ancient</label>
+            <input type="checkbox"  id="ancient" name="ancient" class="ancient">
+
+        </div>
+
+
+        <div class="overpass">
+            <label for="overpass">Overpass</label>
+            <input type="checkbox"  id="overpass"  name="overpass" class="overpass">
+
+        </div>
+    </div>
+
+    <div class="switches3">
+
+        <div class="cache">
+            <label for="cache">Cache</label>
+            <input type="checkbox"  id="cache"  name="cache" class="cache">
+
+        </div>
+
+
+        <div class="cobblestone">
+            <label for="cobblestone">Cobblestone</label>
+            <input type="checkbox"  id="cobblestone"  name="cobblestone" class="cobblestone">
+
+        </div>
+
+
+
+        <div class="vertigo">
+            <label for="vertigo">Vertigo</label>
+            <input type="checkbox"  id="vertigo"  name="vertigo" class="vertigo">
+
+        </div>
+
+
+
+        <div class="train">
+            <label for="train">Train</label>
+            <input type="checkbox"  id="train"  name="train" class="train">
+
+        </div>
+    </div>
 </div>
 
-<div class="losowanie">
-    <h3>How many maps do you have:</h3><br>
-    <label for="domTextElement"></label>
-    <input type="text" id="domTextElement" > 
-    
-    <button type="button"  onclick="getValueInput()" class="start">Start</button> 
-    
-    <p id="valueInput">Your map is:</p> 
-  
 
-</div>
+
+
+
+<!--<button id="btn">Get Selected Colors</button>-->
+
+
+
+
+<h4 id="btn">Start</h4>
+<p id="result">[]</p><br>
+
+
+
 
 <script src="main.js"></script>
-
-
-
 </body>
 </html>
